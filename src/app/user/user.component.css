@@ -1,0 +1,220 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: blue;
+    color: white;
+    height: 100px; 
+  }
+
+  .logo {
+    margin: 0;
+    font-size: 24px;
+    line-height: 1.2;
+    margin-left: 20px;
+}
+.logo-overlay{
+    margin-left: 50%;
+    font-size: 24px;
+    line-height: 1.2;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 50px;
+    border-radius: 60%;
+}
+
+  .button{
+    background-color: blue;
+    border: 0cap;
+  }
+  
+  .profile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .profile-info {
+    display: inline-block;
+  }
+  
+  .profile-toggle-btn {
+    background-color: #4682B4;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .user-info-box {
+    background-color: #007FFF;
+    color: white;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    animation: slide-down 0.3s ease-in-out;
+    position: absolute;
+    top: 70px; 
+    right: 10px; 
+    z-index: 999;
+    width: 250px; 
+  }
+  
+  .info-row {
+    margin-bottom: 5px;
+  }
+  
+  @keyframes slide-down {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  
+  
+  .profile {
+    display: flex;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 10px 30px;
+    border-radius: 20px;
+  }
+  
+  .profile-photo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 20px;
+  }
+  
+  .profile-info {
+    text-align: left;
+  }
+  
+  .employee-name {
+    font-weight: bold;
+    font-size: 16px;
+  }
+  
+  .job-role,
+  .job-username,
+  .job-email,
+  .job-phone {
+    font-size: 12px;
+  }
+  .dashboard-container {
+    padding: 20px;
+    color: black;
+    background-color: #F0F8FF;
+  }
+  
+  .search-bar {
+    margin-bottom: 20px;
+  }
+  
+  .search-bar input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .table th, .table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  .table th {
+    background-color: #0066cc;
+    color: white;
+  }
+  
+  .table td {
+    background-color: white;
+  }
+  
+
+  .links button{
+    color: gray;
+    font-weight: 500;
+    font-size: 18px;
+    background-color: blue;
+    border: 0;
+    gap: 10%;
+  }
+  .links a.active {
+    color: white; 
+  }
+  #linkx{
+    margin-right: 200px;
+    margin-left: 600px;
+  }
+
+.header .links .active .link {
+    color: white; /* Change this to the desired color */
+  }
+.header .links .active .link {
+    color: white; /* Change this to the desired color */
+  }
+  .faculty-list {
+    width: 100%;
+    margin: 20px 0;
+  }
+  
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .table th, .table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .contact-btn {
+    padding: 5px 10px;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .email-btn {
+    background-color: #4682B4;
+  }
+  
+  .phone-btn {
+    background-color: #32CD32;
+  }
+  
+  .status-btn {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .status-btn.active {
+    background-color: #32CD32;
+    color: white;
+  }
+  
+  .status-btn:not(.active) {
+    background-color: #FF6347;
+    color: white;
+  }
+  

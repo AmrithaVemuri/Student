@@ -1,0 +1,36 @@
+.Login{
+    margin-left: 45%;
+    margin-top: 12%;
+    align-items: center;
+    
+}
+.eye{
+    position: absolute;
+    left:150px;
+    top: 55%;
+    transform: translateY(-50%);
+    color: black;
+}
+h1{
+    margin-left: 45px;
+    margin-bottom: 10px;
+}
+#username {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+#Password {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+#Role {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+

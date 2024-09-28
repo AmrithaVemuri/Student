@@ -1,0 +1,265 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: blue;
+    color: white;
+    height: 100px; 
+  }
+
+  .logo {
+    margin: 0;
+    font-size: 24px;
+    line-height: 1.2;
+    margin-left: 20px;
+}
+.logo-overlay{
+    margin-left: 50%;
+    font-size: 24px;
+    line-height: 1.2;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 50px;
+    border-radius: 60%;
+}
+
+  .button{
+    background-color: blue;
+    border: 0cap;
+  }
+  
+  .profile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .profile-info {
+    display: inline-block;
+  }
+  
+  .profile-toggle-btn {
+    background-color: #4682B4;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .user-info-box {
+    background-color: #007FFF;
+    color: white;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    animation: slide-down 0.3s ease-in-out;
+    position: absolute;
+    top: 70px; 
+    right: 10px; 
+    z-index: 999;
+    width: 250px; 
+  }
+  
+  .info-row {
+    margin-bottom: 5px;
+  }
+  
+  @keyframes slide-down {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+   
+  .profile {
+    display: flex;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 10px 30px;
+    border-radius: 20px;
+  }
+  
+  .profile-photo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 20px;
+  }
+  
+  .profile-info {
+    text-align: left;
+  }
+  
+  .employee-name {
+    font-weight: bold;
+    font-size: 16px;
+  }
+  
+  .job-role,
+  .job-username,
+  .job-email,
+  .job-phone {
+    font-size: 12px;
+  }
+  .dashboard-container {
+    padding: 20px;
+    color: black;
+    background-color: #F0F8FF;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .links button{
+    color: gray;
+    font-weight: 500;
+    font-size: 18px;
+    background-color: blue;
+    border: 0;
+    gap: 10%;
+  }
+  .links a.active {
+    color: white; 
+  }
+  #linkx{
+    margin-right: 200px;
+    margin-left: 600px;
+  }
+
+.header .links .active .link {
+    color: white; /* Change this to the desired color */
+  }
+.header .links .active .link {
+    color: white; /* Change this to the desired color */
+  }
+  /* General styles for the form container */
+.form-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f8f9fa;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  input, select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .form-buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .submit-btn {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .submit-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .remove-btn {
+    background-color: #dc3545;
+    color: white;
+  }
+  
+  .remove-btn:hover {
+    background-color: #c82333;
+  }
+  
+  .records-list {
+    margin-top: 30px;
+  }
+  
+  .records-list ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .records-list li {
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .records-list button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .records-list button:hover {
+    background-color: #218838;
+  }
+  .dashboard-container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+.charts-wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px; 
+}
+
+.chart-container {
+  flex: 1; 
+  margin-bottom: 40px;
+}
+
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .chart-container {
+    margin-bottom: 40px;
+  }
+  
+  h3 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  

@@ -1,0 +1,91 @@
+<!-- app-header.component.html -->
+<header class="header">
+    <div class="logo">
+      <img class="logo-overlay" src="https://zenprospect-production.s3.amazonaws.com/uploads/pictures/66d1668c34f7bc000166a3ea/picture" alt="Logo">
+    </div>
+    
+    <div class="left-section">
+      <div class="links">
+        <button (click)="showText('Dashboard')" [ngClass]="{'active': activeButton === 'Dashboard'}">
+          <div class="link">Dashboard</div>
+        </button>
+        <button (click)="showText('Update')" [ngClass]="{'active': activeButton === 'Update'}">
+          <div class="link" id="linkxng">Update</div>
+        </button>
+
+      </div>
+    </div>
+    
+    <div class="right-section">
+      <div class="profile">
+        <img src="https://t4.ftcdn.net/jpg/03/64/21/11/360_F_364211147_1qgLVxv1Tcq0Ohz3FawUfrtONzz8nq3e.jpg" alt="Employee Photo" class="profile-photo">
+        <div class="profile-info">
+          <span class="employee-name">{{ info[0].name }}</span><br>
+          <span class="job-role">{{ info[0].id }}</span>
+        </div>
+        <button (click)="toggleUserInfo()" class="profile-toggle-btn">Show Info</button>
+      </div>
+      
+      <!-- Slide-down User Info -->
+      <div *ngIf="showUserInfo" class="user-info-box">
+        <div class="info-row">
+          <span>Name:</span> {{ info[0].name }}
+        </div>
+        <div class="info-row">
+          <span>Role:</span> {{ info[0].Role }}
+        </div>
+        <div class="info-row">
+          <span>Email:</span> {{ info[0].email }}
+        </div>
+        <div class="info-row">
+          <span>Phone:</span> {{ info[0].phone }}
+        </div>
+      </div>
+    </div>
+  </header>
+  
+<div *ngIf="activeButton === 'Update'" class="dashboard-container">
+    <h2>Update Profile</h2>
+  
+  <form >
+    <div class="form-group">
+      <label for="officeHours">Office Hours</label>
+      <input type="text" id="officeHours" name="officeHours"  required />
+    </div>
+
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email"  required />
+    </div>
+
+    <div class="form-group">
+      <label for="phone">Phone</label>
+      <input type="text" id="phone" name="phone" required />
+    </div>
+
+    <div class="form-buttons">
+      <button type="submit" class="btn submit-btn">Update Profile</button>
+    </div>
+  </form>
+</div>
+
+
+
+<div *ngIf="activeButton === 'Dashboard'" class="dashboard-container">
+<div class="dashboard-container">
+    <h2>Manage Class List</h2>
+  
+    <div class="students-list">
+      <h3>Students in Your Courses</h3>
+      <ul>
+        <li *ngFor="let student of students">
+          <img [src]="student.photo" alt="{{ student.name }}'s photo" class="student-photo">
+          <span class="student-name">{{ student.name }}</span> - 
+          <span class="student-email">{{ student.email }}</span> - 
+          <span class="student-phone">{{ student.phone }}</span>
+        </li>
+      </ul>
+    </div>
+  
+</div>
+  

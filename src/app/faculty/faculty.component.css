@@ -1,0 +1,274 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: blue;
+    color: white;
+    height: 100px; 
+  }
+
+  .logo {
+    margin: 0;
+    font-size: 24px;
+    line-height: 1.2;
+    margin-left: 20px;
+}
+.logo-overlay{
+    margin-left: 50%;
+    font-size: 24px;
+    line-height: 1.2;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 50px;
+    border-radius: 60%;
+}
+
+  .button{
+    background-color: blue;
+    border: 0cap;
+  }
+  
+  .profile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .profile-info {
+    display: inline-block;
+  }
+  
+  .profile-toggle-btn {
+    background-color: #4682B4;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .user-info-box {
+    background-color: #007FFF;
+    color: white;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    animation: slide-down 0.3s ease-in-out;
+    position: absolute;
+    top: 70px; 
+    right: 10px; 
+    z-index: 999;
+    width: 250px; 
+  }
+  
+  .info-row {
+    margin-bottom: 5px;
+  }
+  
+  @keyframes slide-down {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  .profile {
+    display: flex;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 10px 30px;
+    border-radius: 20px;
+  }
+  
+  .profile-photo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 20px;
+  }
+  
+  .profile-info {
+    text-align: left;
+  }
+  
+  .employee-name {
+    font-weight: bold;
+    font-size: 16px;
+  }
+  
+  .job-role,
+  .job-username,
+  .job-email,
+  .job-phone {
+    font-size: 12px;
+  }
+  .dashboard-container {
+    padding: 20px;
+    color: black;
+    background-color: #F0F8FF;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .links button{
+    color: gray;
+    font-weight: 500;
+    font-size: 18px;
+    background-color: blue;
+    border: 0;
+    gap: 10%;
+  }
+  .links a.active {
+    color: white; 
+  }
+  #linkx{
+    margin-right: 200px;
+    margin-left: 600px;
+  }
+
+.header .links .active .link {
+    color: white; /* Change this to the desired color */
+  }
+.header .links .active .link {
+    color: white; /* Change this to the desired color */
+  }
+  .dashboard-container {
+    padding: 20px;
+    background-color: #f9f9f9; /* Light background color */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+h2 {
+    font-size: 24px;
+    color: #333; /* Dark text color */
+    margin-bottom: 20px; /* Space below heading */
+}
+
+.students-list {
+    background-color: #fff; /* White background for student list */
+    padding: 15px;
+    border-radius: 5px; /* Slightly rounded corners */
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1); /* Light shadow */
+}
+
+h3 {
+    font-size: 20px;
+    color: #4682B4; /* Custom color for headings */
+    margin-bottom: 15px; /* Space below subheading */
+}
+
+ul {
+    list-style-type: none; /* Remove default list styling */
+    padding: 0; /* Remove padding */
+}
+
+li {
+    display: flex; /* Flexbox for alignment */
+    align-items: center; /* Center items vertically */
+    padding: 10px;
+    border-bottom: 1px solid #ddd; /* Separator line */
+}
+
+li:last-child {
+    border-bottom: none; /* Remove border from last item */
+}
+
+.student-photo {
+    width: 50px; /* Fixed width for student photos */
+    height: 50px; /* Fixed height for student photos */
+    border-radius: 50%; /* Circular photo */
+    margin-right: 15px; /* Space between photo and text */
+}
+
+.student-name {
+    font-weight: bold; /* Bold text for names */
+    color: #333; /* Dark text color */
+}
+
+.student-email,
+.student-phone {
+    color: #666; /* Gray color for email and phone */
+    margin-left: 10px; /* Space between elements */
+}
+.profile-update-container {
+    padding: 20px;
+    background-color: #f9f9f9; /* Light background color */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+h2 {
+    font-size: 24px;
+    color: #333; /* Dark text color */
+    margin-bottom: 20px; /* Space below heading */
+}
+
+.form-container {
+    background-color: #fff; /* White background for form */
+    padding: 20px; /* Padding for form content */
+    border-radius: 5px; /* Slightly rounded corners */
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1); /* Light shadow */
+}
+
+.form-group {
+    margin-bottom: 15px; /* Space between form groups */
+}
+
+label {
+    display: block; /* Make labels block elements */
+    margin-bottom: 5px; /* Space below labels */
+    font-weight: bold; /* Bold labels for emphasis */
+    color: #4682B4; /* Custom color for labels */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="time"] {
+    width: 100%; /* Full width input fields */
+    padding: 10px; /* Padding inside input fields */
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 4px; /* Rounded corners for inputs */
+    box-sizing: border-box; /* Include padding in width */
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="time"]:focus {
+    border-color: #4682B4; /* Change border color on focus */
+    outline: none; /* Remove default outline */
+}
+
+.form-buttons {
+    display: flex; /* Flexbox for button alignment */
+    justify-content: space-between; /* Space between buttons */
+}
+
+.btn {
+    padding: 10px 20px; /* Padding for buttons */
+    border: none; /* Remove border */
+    border-radius: 4px; /* Rounded corners for buttons */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Transition for hover effect */
+}
+
+.submit-btn {
+    background-color: #4682B4; /* Custom color for submit button */
+    color: white; /* White text color */
+}
+
+.submit-btn:hover {
+    background-color: #3b6a99; /* Darker shade on hover */
+}
+
+.remove-btn {
+    background-color: #d9534f; /* Custom color for remove button */
+    color: white; /* White text color */
+}
+
+.remove-btn:hover {
+    background-color: #c9302c; /* Darker shade on hover */
+}

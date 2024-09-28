@@ -1,0 +1,15 @@
+<div class="Login">
+    <h1>Login</h1>
+    <label for="username">Username:</label>
+    <input id="username" placeholder="Enter">
+    <label for="Password">Password</label>
+        <input type="text" id="Password" name="Password" formControlName="password">
+    <label for="Role">Role:</label>
+    <select id="Role" formControlName="departmentName">
+        <option value="" disabled selected hidden>Select Role</option>
+        <option *ngFor="let role of Roles" [value]="role">{{ role }}</option>
+    </select>
+
+    <button>Login</button>
+
+</div>

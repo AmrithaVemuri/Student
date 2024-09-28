@@ -1,0 +1,105 @@
+<header class="header">
+  <div class="logo">
+    <img class="logo-overlay" src="https://zenprospect-production.s3.amazonaws.com/uploads/pictures/66d1668c34f7bc000166a3ea/picture" alt="Logo">
+  </div>
+  
+  <div class="left-section">
+    <div class="links">
+      <button (click)="showText('studentsearch')" [ngClass]="{'active': activeButton === 'studentsearch'}">
+        <div class="link" id="linkxng">student search</div>
+      </button>
+      <button (click)="showText('Faculty')" [ngClass]="{'active': activeButton === 'Faculty'}">
+        <div class="link">Faculty</div>
+      </button>
+    </div>
+  </div>
+  
+  <div class="right-section">
+    <div class="profile">
+      <img src="https://t4.ftcdn.net/jpg/03/64/21/11/360_F_364211147_1qgLVxv1Tcq0Ohz3FawUfrtONzz8nq3e.jpg" alt="Employee Photo" class="profile-photo">
+      <div class="profile-info">
+        <span class="employee-name">{{ info[0].name }}</span><br>
+        <span class="job-role">{{ info[0].id }}</span>
+      </div>
+      <button (click)="toggleUserInfo()" class="profile-toggle-btn">Show Info</button>
+    </div>
+    
+    <!-- Slide-down User Info -->
+    <div *ngIf="showUserInfo" class="user-info-box">
+      <div class="info-row">
+        <span>Name:</span> {{ info[0].name }}
+      </div>
+      <div class="info-row">
+        <span>Role:</span> {{ info[0].Role }}
+      </div>
+      <div class="info-row">
+        <span>Email:</span> {{ info[0].email }}
+      </div>
+      <div class="info-row">
+        <span>Phone:</span> {{ info[0].phone }}
+      </div>
+    </div>
+  </div>
+</header>
+
+<div *ngIf="activeButton === 'studentsearch'" class="dashboard-container">
+  <div class="search-bar">
+    <input type="text" placeholder="Search..." />
+  </div>
+
+  <table class="table">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Role</th>
+        <th>Email</th>
+        <th>Phone</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of info">
+        <td>{{ item.id }}</td>
+        <td>{{ item.name }}</td>
+        <td>{{ item.Role }}</td>
+        <td>{{ item.email }}</td>
+        <td>{{ item.phone }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div *ngIf="activeButton === 'Faculty'" class="dashboard-container">
+  <div class="faculty-list">
+    <h2>Assigned Faculty Advisors</h2>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Faculty Name</th>
+          <th>Course</th>
+          <th>Email</th>
+          <th>Phone</th>
+         
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let faculty of facultyList">
+          <td>{{ faculty.name }}</td>
+          <td>{{ faculty.course }}</td>
+
+          <td>
+            <button (click)="sendEmail(faculty.email)" class="contact-btn email-btn">
+              Email
+            </button>
+          </td>
+          <td>
+            <button (click)="callPhone(faculty.phone)" class="contact-btn phone-btn">
+              Phone
+            </button>
+          </td>
+       
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  
+</div>
